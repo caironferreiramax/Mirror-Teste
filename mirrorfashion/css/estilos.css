@@ -2,8 +2,9 @@ body {
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+/* Cabeçalho da Página */
 .container-header {
+    position: relative;
     margin: 0 auto;
     width: 940px;
 }
@@ -18,6 +19,19 @@ body {
     text-align: right;
     width: 140px;
 }
+
+.sacola {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .menu-opcoes ul li{
     font-size: 15px;
     display: inline;
@@ -27,7 +41,54 @@ body {
     color: #003366;
 }
 
-.container {
+/* Parte de Busca da página */
+.busca,
+.menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.busca,
+.menu-departamentos {
+    float: left;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/* .container {
     margin-right: auto;
     margin-left: auto;
-}
+} */
